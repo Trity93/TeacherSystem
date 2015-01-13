@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.teachersystem"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:name="com.ts.app.TsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseTheme" >
+        <!-- 封面 -->
+        <activity 
+            android:name="com.ts.activity.SplashScreen"
+            android:theme="@style/NoActonBarTheme"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主Activity -->
+        <activity android:name="com.slidingmenu.MainActivity">
+        </activity>
+        <!-- 登录 -->
+        <activity android:name="com.ts.activity.LoginActivity_"
+            android:label="@string/login_text">
+        </activity>
+        <!-- 二维码扫描 -->
+        <activity
+            android:name="com.qr.code.MipcaActivityCapture"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName="info.androidhive.actionbar.MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+       
+    </application>
+	<!-- 权限 -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+</manifest>

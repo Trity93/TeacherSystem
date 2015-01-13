@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>个人资料</item>
+        <item>出勤记录</item>
+        <item>加班记录</item>
+        <item>请假记录</item>
+        <item>工资信息</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+
+    <string-array name="info_items">
+        <item>编号</item>
+        <item>姓名</item>
+        <item>性别</item>
+        <item>年龄</item>
+        <item>部门</item>
+    </string-array>
+    <string-array name="work_items">
+        <item>编号</item>
+        <item>出勤日期号</item>
+        <item>上班打卡</item>
+        <item>下班打卡</item>
+    </string-array>
+    <string-array name="overtime_items">
+        <item>编号</item>
+        <item>加班日期号</item>
+    </string-array>
+    <string-array name="leave_items">
+        <item>编号</item>
+        <item>请假日期号</item>
+    </string-array>
+    <string-array name="wage_items">
+        <item>编号</item>
+        <item>出勤统计</item>
+        <item>请假统计</item>
+        <item>加班统计</item>
+        <item>实发工资</item>
+    </string-array>
+
+</resources>

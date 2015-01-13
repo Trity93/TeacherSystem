@@ -1,0 +1,47 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+    </style>
+    <style name="ActionBar">
+        <item name="android:background">@color/ThemeColor</item>
+    </style>
+    <!-- no action bar -->
+    <style name="NoActonBarTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+    </style>
+    <!-- login btn -->
+    <style name="LoginBtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/login_text</item>
+        <item name="android:background">@color/ThemeColor</item>
+    </style>
+	<!-- listview item style -->
+	<style name="listview_textview_style">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!-- listview style -->
+    <style name="listview_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:divider">@android:color/darker_gray</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+</resources>
